@@ -23,10 +23,9 @@ if (MyFriend.includes("d")) {
         
 }
 let name = prompt("Enter your name");
-if (name includes(" ")) {
-    console.log("full name");
-    else {
-        console.log("first name");
+if (name.includes(" ")) {
+    console.log("full name hai");
+    }else {
+        console.log("first name hai");
         
     }    
-}
