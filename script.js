@@ -153,10 +153,33 @@ if (MyFriend.includes("d")) {
 
 
 
-function weekDays(dayInput) {
-  const days = ["Mon", "Tue", "Wed", "Thu", "fri"];
-  const day= days[dayInput - 1];
-  return day ?? "Invalid Day"
-}
-console.log(weekDays("0"));
+// function weekDays(dayInput) {
+//   const days = ["Mon", "Tue", "Wed", "Thu", "fri"];
+//   const day= days[dayInput - 1];
+//   return day ?? "Invalid Day"
+// }
+// console.log(weekDays("0"));
    
+
+
+// function greet(greetword = "Hello", Name = "user") {
+//   // const str = (greetword + " " + Name + " nice to meet you ");
+//   const str2 = `${greetword} ${ Name } ${nice to meet you}`;
+//   console.log(str2);
+  
+// }
+// greet();
+
+
+// function capital(word) {
+//   finalStr = word[0].toUpperCase() + word.slice(1,).toLowerCase();
+//   return finalStr;
+// }
+function greet(greetWord = "Hello", name = "User") {
+  const str = greetWord + " " + name + " " + "Nice to Meet You.";
+  return (str);
+}
+
+const x = greet("namaste", "sir")
+console.log(x)
+    
