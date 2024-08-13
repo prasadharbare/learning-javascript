@@ -66,6 +66,11 @@
 // const x = reverseNumber(14)+reverseNumber(14);
 // console.log(x);
 
+function cricket() {
+    var x = "Sachin Tendulkar";
+    console.log(x);
+}
+console.log("cricket");
 
 
     
