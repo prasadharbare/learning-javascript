@@ -61,7 +61,8 @@ function reverseNumber(number) {
     const arrString = stringNum.split("");
     const reverseString = arrString.reverse();
     const jointNum = reverseString.join("");
-    return jointNum;
+    return Number(jointNum);
 }
 const x = reverseNumber(14)+reverseNumber(14);
 console.log(x);
+
