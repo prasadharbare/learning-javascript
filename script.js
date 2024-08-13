@@ -183,3 +183,4 @@ function greet(greetWord = "Hello", name = "User") {
 const x = greet("namaste", "sir")
 console.log(x)
     
+
