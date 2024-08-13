@@ -56,13 +56,15 @@
 // const x = reverseString("My name is Prasad");
 // console.log(x);
 
-function reverseNumber(number) {
-    const stringNum = String(number);
-    const arrString = stringNum.split("");
-    const reverseString = arrString.reverse();
-    const jointNum = reverseString.join("");
-    return Number(jointNum);
-}
-const x = reverseNumber(14)+reverseNumber(14);
-console.log(x);
+// function reverseNumber(number) {
+//     const stringNum = String(number);
+//     const arrString = stringNum.split("");
+//     const reverseString = arrString.reverse();
+//     const jointNum = reverseString.join("");
+//     return Number(jointNum);
+// }
+// const x = reverseNumber(14)+reverseNumber(14);
+// console.log(x);
+
+
 
