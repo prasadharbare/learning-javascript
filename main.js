@@ -48,9 +48,20 @@
 
 
 
-// function reverseString(sentence) {
-//     const stringArr=(sentence.split(""));
-//     return stringArr.reverse();
+// function reverseString(string) {
+//   const stringArr = string.split("");
+//   const reverseArr = stringArr.reverse();
+//   return reverseArr.join("");
 // }
-//   const x=reverseString("Prasad Harbare")
+// const x = reverseString("My name is Prasad");
 // console.log(x);
+
+function reverseNumber(number) {
+    const stringNum = String(number);
+    const arrString = stringNum.split("");
+    const reverseString = arrString.reverse();
+    const jointNum = reverseString.join("");
+    return jointNum;
+}
+const x = reverseNumber(14)+reverseNumber(14);
+console.log(x);
