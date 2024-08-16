@@ -79,9 +79,10 @@ function reverseNumber(number) {
   // convert back to string
   const jointNum = reverseString.join("");
   // convert back to num
-  return Number(jointNum);
+    return parseFloat(jointNum);
 }
 const x = reverseNumber(-15);
 console.log(x);
-const y = reverseNumber(23);
+const y = reverseNumber(-23ggg);
 console.log(y);
+
