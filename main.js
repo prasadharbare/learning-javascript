@@ -99,8 +99,27 @@
 //         console.log(i);
 //     }
 
-const fruits = ["apple", "banana", "cherry", "orange", "Pineapple"]
-for (let i = 0; i < fruits.length; i++){
-    return String[0].toUpperCase()+String.slice(1,).toLowerCase());
+// const fruits = ["apple", "banana", "cherry", "orange", "Pineapple"]
+// for (let i = 0; i < fruits.length; i++){
+//     return String[0].toUpperCase()+String.slice(1,).toLowerCase());
+// }
     
+
+// function printEveryNum(number) {
+//     const numString = String(number);
+
+//     for (let i = 0; i < numString.length;i++){
+//         console.log(numString[i]);
+//     }
+// }
+// printEveryNum(12345);
+
+function sumOfNums(numsArr) {
+    let counter = 0;
+    for (let i = 0; i < numsArr.length; i++){
+        counter += numsArr[i];
+    }
+    return counter;
 }
+const x = sumOfNums([1, 2, 3, 4, 5]);
+console.log(x);
