@@ -66,12 +66,26 @@
 // const x = reverseNumber(14)+reverseNumber(14);
 // console.log(x);
 
-function cricket() {
-    var x = "Sachin Tendulkar";
-    console.log(x);
-}
-console.log("cricket");
+// function cricket() {
+//     var x = "Sachin Tendulkar";
+//     console.log(x);
+// }
+// console.log("cricket");
+
+function reverseNumber(number) {
+        // number to string//
+    const stringNum = String(number);
+    // string to array
+    const arrString = stringNum.split("");
+    // array reverse
+    const reverseString = arrString.reverse();
+    // convert back to string
+    const jointNum = reverseString.join("");
+    // convert back to num
+        return Number(jointNum);
+    }
+const x = reverseNumber(15);
+console.log(x);
 
 
-    
-    
+
