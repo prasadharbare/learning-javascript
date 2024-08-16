@@ -2,7 +2,6 @@
 // cartoon[] = "tom & jerry";
 // console.log(cartoon);
 
-
 // const x = Boolean();
 // console.log(x);
 
@@ -45,9 +44,6 @@
 // const y = [" hello","everyone"]
 // console.log(y.reverse(""));
 
-
-
-
 // function reverseString(string) {
 //   const stringArr = string.split("");
 //   const reverseArr = stringArr.reverse();
@@ -73,19 +69,19 @@
 // console.log("cricket");
 
 function reverseNumber(number) {
-        // number to string//
-    const stringNum = String(number);
-    // string to array
-    const arrString = stringNum.split("");
-    // array reverse
-    const reverseString = arrString.reverse();
-    // convert back to string
-    const jointNum = reverseString.join("");
-    // convert back to num
-        return Number(jointNum);
-    }
-const x = reverseNumber(15);
+    number = Math.abs(number);
+  // number to string//
+  const stringNum = String(number);
+  // string to array
+  const arrString = stringNum.split("");
+  // array reverse
+  const reverseString = arrString.reverse();
+  // convert back to string
+  const jointNum = reverseString.join("");
+  // convert back to num
+  return Number(jointNum);
+}
+const x = reverseNumber(-15);
 console.log(x);
-
-
-
+const y = reverseNumber(23);
+console.log(y);
