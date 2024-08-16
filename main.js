@@ -114,12 +114,15 @@
 // }
 // printEveryNum(12345);
 
-function sumOfNums(numsArr) {
-    let counter = 0;
-    for (let i = 0; i < numsArr.length; i++){
-        counter += numsArr[i];
-    }
-    return counter;
-}
-const x = sumOfNums([1, 2, 3, 4, 5]);
-console.log(x);
+
+
+// function sumOfNums(numsArr) {
+//     let counter = 0;
+//     for (let i = 0; i < numsArr.length; i++){
+//         counter += numsArr[i];
+//     }
+//     return counter;
+// }
+// const x = sumOfNums([1, 2, 3, 4, 5]);
+// console.log(x);
+
