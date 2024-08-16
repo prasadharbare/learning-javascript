@@ -68,21 +68,39 @@
 // }
 // console.log("cricket");
 
-function reverseNumber(number) {
-    number = Math.abs(number);
-  // number to string//
-  const stringNum = String(number);
-  // string to array
-  const arrString = stringNum.split("");
-  // array reverse
-  const reverseString = arrString.reverse();
-  // convert back to string
-  const jointNum = reverseString.join("");
-  // convert back to num
-    return parseFloat(jointNum);
-}
-const x = reverseNumber(-15);
-console.log(x);
-const y = reverseNumber(-23ggg);
-console.log(y);
+// function reverseNumber(number, keepSign = false) {
+//   number = Math.abs(number);
+//   // number to string//
+//   const stringNum = String(number);
+//   // string to array
+//   const arrString = stringNum.split("");
+//   // array reverse
+//   const reverseString = arrString.reverse();
+//   // convert back to string
+//   const jointNum = reverseString.join("");
+//   // convert back to num
+//   const reverseNumber = parseFloat(jointNum);
+//   return keepSign ? reverseNumber * Math.sign(number) : reverseNumber;
+// }
+// const x = reverseNumber(-15);
+// console.log(x);
+// const y = reverseNumber(-23);
+// console.log(y);
 
+
+
+// for (var i = 0; i <= 100; i++){  //i+= for even number
+//     console.log(i);
+// }
+    
+
+// for (var i = 0; i <= 20; i++){
+//     if (i === 18) break;
+//         console.log(i);
+//     }
+
+const fruits = ["apple", "banana", "cherry", "orange", "Pineapple"]
+for (let i = 0; i < fruits.length; i++){
+    return String[0].toUpperCase()+String.slice(1,).toLowerCase());
+    
+}
