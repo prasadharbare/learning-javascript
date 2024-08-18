@@ -126,3 +126,18 @@
 // const x = sumOfNums([1, 2, 3, 4, 5]);
 // console.log(x);
 
+
+function getAlphabetIndex(letter) {
+    // Define a string containing all uppercase letters
+    const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    // Find and return the index of the given letter in the ALPHABET string
+    return ALPHABET.indexOf(letter);
+}
+console.log(getAlphabetIndex('A'));
+console.log(getAlphabetIndex('B'));
+console.log(getAlphabetIndex('C')); 
+console.log(getAlphabetIndex('Z')); 
+console.log(getAlphabetIndex('M'));
+console.log(getAlphabetIndex('a')); // Output: -1 (lowercase letters are not found in the uppercase alphabet string)
+console.log(getAlphabetIndex('1')); // Output: -1 (non-alphabet characters are not found)
