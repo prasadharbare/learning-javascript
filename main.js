@@ -151,10 +151,32 @@
 
     
 
-const x = [1, 2, 3, 4, 5];
-x.shift("1");
-console.log(x);
+// const x = [1, 2, 3, 4, 5];
+// x.shift("1");
+// console.log(x);
 // add to end push
 // remove from start shift
 // add to start unshift
 // remove from end pop
+
+// const bike = {
+//     color: "black",
+//     brand: "Royal Enfield",
+//     price: "2 lakh",
+//     honk: function () {
+//         console.warn('hat jao')
+//     }
+// }
+// bike.honk();
+
+const menu = {
+    vadapav: "$20",
+    samosa: "$24",
+    bhaji: "$35",
+    pattis:"$25"
+}
+const keys=Object.keys(menu);
+for (let i = 0; i < keys.length; i++) {
+    ;
+    console.log(keys[i]);
+}
