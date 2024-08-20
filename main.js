@@ -175,8 +175,20 @@ const menu = {
     bhaji: "$35",
     pattis:"$25"
 }
-const keys=Object.keys(menu);
-for (let i = 0; i < keys.length; i++) {
-    ;
-    console.log(keys[i]);
+// const keys=Object.keys(menu);
+// for (let i = 0; i < keys.length; i++){;
+//     const key = keys[i];
+//     console.log(i);
+//     console.log(menu[key]);
+//     const str = "The Price Of $(key) is $(value)";
+//     console.log(str);
+// }
+    
+for (let key in menu) {
+    const value = menu[key];
+    const tax = Number(value.slice(1,) + 1);
+    console.log(`The Price Of ${key} is $${tax}`);
 }
+
+    
+
