@@ -141,3 +141,20 @@
 // console.log(getAlphabetIndex('M'));
 // console.log(getAlphabetIndex('a')); // Output: -1 (lowercase letters are not found in the uppercase alphabet string)
 // console.log(getAlphabetIndex('1')); // Output: -1 (non-alphabet characters are not found)
+
+
+// function month(number) {
+//     const months = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sep", "oct", "nov", "dec"];
+//     return months[number - 1]??"invalid";
+// } 
+// console.log(month(-1));
+
+    
+
+const x = [1, 2, 3, 4, 5];
+x.shift("1");
+console.log(x);
+// add to end push
+// remove from start shift
+// add to start unshift
+// remove from end pop
