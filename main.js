@@ -194,3 +194,31 @@ function move1(char, step) {
 }
 const x = move1("A", 3);
 console.log(x);
+
+
+
+function move1(char, step) {
+  // Define the alphabet
+  const alpha = "abcdefghijklmnopqrstuvwxyz";
+  
+  // Convert input character to lowercase
+  const lowerChar = char.toLowerCase();
+  
+  // Find the index of the lowercase character
+  const idxchar = alpha.indexOf(lowerChar);
+  
+  // Calculate the new index with wrap-around
+  let index = (idxchar + step) % 26;
+  
+  // Get the new character from the alphabet
+  const finalChar = alpha[index];
+  
+  // Convert the final character to uppercase if the original was uppercase
+  return char === char.toUpperCase() ? finalChar.toUpperCase() : finalChar;
+}
+
+console.log(move1("A", 3));  // Output: "D"
+console.log(move1("a", 3));  // Output: "d"
+console.log(move1("Z", 1));  // Output: "A"
+console.log(move1("z", 1));  // Output: "a"
+
