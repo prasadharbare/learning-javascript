@@ -87,12 +87,9 @@
 // const y = reverseNumber(-23);
 // console.log(y);
 
-
-
 // for (var i = 0; i <= 100; i++){  //i+= for even number
 //     console.log(i);
 // }
-    
 
 // for (var i = 0; i <= 20; i++){
 //     if (i === 18) break;
@@ -103,7 +100,6 @@
 // for (let i = 0; i < fruits.length; i++){
 //     return String[0].toUpperCase()+String.slice(1,).toLowerCase());
 // }
-    
 
 // function printEveryNum(number) {
 //     const numString = String(number);
@@ -113,8 +109,6 @@
 //     }
 // }
 // printEveryNum(12345);
-
-
 
 // function sumOfNums(numsArr) {
 //     let counter = 0;
@@ -126,7 +120,6 @@
 // const x = sumOfNums([1, 2, 3, 4, 5]);
 // console.log(x);
 
-
 // function getAlphabetIndex(letter) {
 //     // Define a string containing all uppercase letters
 //     const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -136,20 +129,17 @@
 // }
 // console.log(getAlphabetIndex('A'));
 // console.log(getAlphabetIndex('B'));
-// console.log(getAlphabetIndex('C')); 
-// console.log(getAlphabetIndex('Z')); 
+// console.log(getAlphabetIndex('C'));
+// console.log(getAlphabetIndex('Z'));
 // console.log(getAlphabetIndex('M'));
 // console.log(getAlphabetIndex('a')); // Output: -1 (lowercase letters are not found in the uppercase alphabet string)
 // console.log(getAlphabetIndex('1')); // Output: -1 (non-alphabet characters are not found)
 
-
 // function month(number) {
 //     const months = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sep", "oct", "nov", "dec"];
 //     return months[number - 1]??"invalid";
-// } 
+// }
 // console.log(month(-1));
-
-    
 
 // const x = [1, 2, 3, 4, 5];
 // x.shift("1");
@@ -170,11 +160,12 @@
 // bike.honk();
 
 const menu = {
-    vadapav: "$20",
-    samosa: "$24",
-    bhaji: "$35",
-    pattis:"$25"
-}
+  vadapav: "$20",
+  samosa: "$24",
+  bhaji: "$35",
+  pattis: "$25",
+};
+
 // const keys=Object.keys(menu);
 // for (let i = 0; i < keys.length; i++){;
 //     const key = keys[i];
@@ -183,12 +174,23 @@ const menu = {
 //     const str = "The Price Of $(key) is $(value)";
 //     console.log(str);
 // }
-    
-for (let key in menu) {
-    const value = menu[key];
-    const tax = Number(value.slice(1,) + 1);
-    console.log(`The Price Of ${key} is $${tax}`);
+
+// for (let key in menu) {
+//     const value = menu[key];
+//     const tax = Number(value.slice(1,) + 1);
+//     console.log(`The Price Of ${key} is $${tax}`);
+// }
+
+function move1(char, step) {
+  const alpha = "abcdefghijklmnopqrstuvwxyz";
+  const idxchar = alpha.indexOf(char);
+  let index = idxchar + step;
+
+  if (index > 25) {
+    index=index % 26;
+  }
+  const finalChar = alpha[index];
+  return finalChar;
 }
-
-    
-
+const x = move1("A", 3);
+console.log(x);
