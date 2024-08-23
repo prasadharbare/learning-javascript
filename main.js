@@ -159,12 +159,12 @@
 // }
 // bike.honk();
 
-const menu = {
-  vadapav: "$20",
-  samosa: "$24",
-  bhaji: "$35",
-  pattis: "$25",
-};
+// const menu = {
+//   vadapav: "$20",
+//   samosa: "$24",
+//   bhaji: "$35",
+//   pattis: "$25",
+// };
 
 // const keys=Object.keys(menu);
 // for (let i = 0; i < keys.length; i++){;
@@ -181,44 +181,142 @@ const menu = {
 //     console.log(`The Price Of ${key} is $${tax}`);
 // }
 
-function move1(char, step) {
-  const alpha = "abcdefghijklmnopqrstuvwxyz";
-  const idxchar = alpha.indexOf(char);
-  let index = idxchar + step;
 
-  if (index > 25) {
-    index=index % 26;
-  }
-  const finalChar = alpha[index];
-  return finalChar;
+//function to move a character to given step
+// function move(char, step) {
+//   let alpha = "abcdefghijklmnopqrstuvwxyz";
+//   if (!alpha.includes(char)) {
+//     if (alpha.toUpperCase().includes(char)) {
+//       alpha=alpha.toUpperCase()
+//     } else {
+//       return char;
+//     }
+//   }
+
+//   const idxchar = alpha.indexOf(char);
+//   let index = idxchar + step;
+
+//   if (index > 25) {
+//     index=index % 26;
+//   }
+//   const finalChar = alpha[index];
+//   return finalChar;
+// }
+// const x = move("z", 53);
+// console.log(x);
+
+
+
+// function move1(char, step) {
+//   // Define the alphabet
+//   const alpha = "abcdefghijklmnopqrstuvwxyz";
+  
+//   // Convert input character to lowercase
+//   const lowerChar = char.toLowerCase();
+  
+//   // Find the index of the lowercase character
+//   const idxchar = alpha.indexOf(lowerChar);
+  
+//   // Calculate the new index with wrap-around
+//   let index = (idxchar + step) % 26;
+  
+//   // Get the new character from the alphabet
+//   const finalChar = alpha[index];
+  
+//   // Convert the final character to uppercase if the original was uppercase
+//   return char === char.toUpperCase() ? finalChar.toUpperCase() : finalChar;
+// }
+
+// console.log(move1("A", 3));  // Output: "D"
+// console.log(move1("a", 3));  // Output: "d"
+
+
+// function iterateString(str) {
+//   let finalStr = "";
+//   for (let i = 0; i < str.length; i++) {
+//     finalStr += move(str[i], 2);
+//   }
+//   return finalStr
+// }
+// console.log(iterateString("middle-out",2));
+  
+
+  
+// function splitBunches(bunches) {
+//   const finalist[]; {
+//     for (let bunch of bunches) {
+//       const { name, quantity } = bunch;
+//       for (let i = 0; i < quantity; i++) {
+//         console.log({ name: name, quantity: quantity });
+//       }
+//     }
+//   }
+// }
+
+// const sayHi =(name)=>`Hello ${name}`;
+
+//   const x = sayHi("jack");
+// console.log(x);
+
+
+
+// const add = (a, b) => a ** 2;
+// console.log(add(3));
+
+
+
+// const isaEven = (a) => {
+//   if (a % 2 == 0) {
+//     return `the number is even`;
+//   } else {
+//     return `the number is odd`;
+//   }
+// };
+// const x = isaEven(4);
+// console.log(x);
+
+
+// function invokeThrice(fn) {
+//   fn();
+//   fn();
+//   fn();
+// }
+// invokeThrice(()=>console.log("hi"));
+
+
+function functionCall(func, params) {
+  for (let i = 0; i < params.length; i++);
+  func(params);
 }
-const x = move1("A", 3);
-console.log(x);
+functionCall();
 
 
 
-function move1(char, step) {
-  // Define the alphabet
-  const alpha = "abcdefghijklmnopqrstuvwxyz";
-  
-  // Convert input character to lowercase
-  const lowerChar = char.toLowerCase();
-  
-  // Find the index of the lowercase character
-  const idxchar = alpha.indexOf(lowerChar);
-  
-  // Calculate the new index with wrap-around
-  let index = (idxchar + step) % 26;
-  
-  // Get the new character from the alphabet
-  const finalChar = alpha[index];
-  
-  // Convert the final character to uppercase if the original was uppercase
-  return char === char.toUpperCase() ? finalChar.toUpperCase() : finalChar;
-}
+// function redundant(str) {
+//   return function () {
+//     return str;
+//   }
+// }
 
-console.log(move1("A", 3));  // Output: "D"
-console.log(move1("a", 3));  // Output: "d"
-console.log(move1("Z", 1));  // Output: "A"
-console.log(move1("z", 1));  // Output: "a"
+
+// const fruits = "APPLE,BANANA,ORANGE,KIWI".split();
+// const uppercase = word => console.log(word.toUpperCase());
+// fruits, forEach(a => {
+//   console.log(a.toUpperCase());
+// })
+  
+
+function willFit=(capacity, weight) => {
+  const holds = {
+    S: 50,
+    M: 100,
+    L: 200,
+  };
+  let totalCapacity = 0;
+  capacity.forEach(crate => {
+    totalCapacity = totalCapacity + holds[crate];
+  })
+};
+
+  
 
