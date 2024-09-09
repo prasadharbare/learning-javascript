@@ -323,16 +323,43 @@
 
 
 
-function makePlusFunction(basenum) {
-  return function (argument) {
-    return basenum + argument;
-  };
-}
- const plusTwo = makePlusFunction(2)
-const plusFive = makePlusFunction(5)
-const plusSeven = makePlusFunction(plusTwo(plusFive(0)))
-const plusTen = makePlusFunction(10)
+// function makePlusFunction(basenum) {
+//   return function (argument) {
+//     return basenum + argument;
+//   };
+// }
+//  const plusTwo = makePlusFunction(2)
+// const plusFive = makePlusFunction(5)
+// const plusSeven = makePlusFunction(plusTwo(plusFive(0)))
+// const plusTen = makePlusFunction(10)
 
-console.log(plusFive(2));
+// console.log(plusFive(2));
+
+
+//IIFE(Immediately Invoked Function Expression)
+// var result = (function () {
+// 	var x = 10;
+// 	var y = 20;
+// 	return x + y;
+// })();
+
+// console.log(result); 
+
+
+//edabit expert/Convert an Arrow Function to a Regular Function
+function convertToArray(funcstr) {
+  //extracting params
+  const paramStart = funcstr.indexOf("{");
+  const paramEnd = funcstr.indexOf("}");
+  const funcParam = funcStr.slice(paramStart+1);
+
+  //Extracting Body
+  const bracketStart = funcStr.indexOf("{");
+  const funcBody = funcStr.slice(bracketStart);
+
+  console.log(funcBody);
+  const arrowStr=`($functionParam)`
+  
+}
 
 
