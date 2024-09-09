@@ -284,11 +284,11 @@
 // invokeThrice(()=>console.log("hi"));
 
 
-function functionCall(func, params) {
-  for (let i = 0; i < params.length; i++);
-  func(params);
-}
-functionCall();
+// function functionCall(func, params) {
+//   for (let i = 0; i < params.length; i++);
+//   func(params);
+// }
+// functionCall();
 
 
 
@@ -306,17 +306,33 @@ functionCall();
 // })
   
 
-function willFit=(capacity, weight) => {
-  const holds = {
-    S: 50,
-    M: 100,
-    L: 200,
-  };
-  let totalCapacity = 0;
-  capacity.forEach(crate => {
-    totalCapacity = totalCapacity + holds[crate];
-  })
-};
 
-  
+
+// const willFit = (capacity, weight) => {
+//   const holds = {
+//     S: 50,
+//     M: 100,
+//     L: 200,
+//   };
+//   let totalCapacity = 0;
+//   capacity.forEach(crate => {
+//     totalCapacity = totalCapacity + holds[crate];
+//   })
+// };
+//  console.log(willFit);
+
+
+
+function makePlusFunction(basenum) {
+  return function (argument) {
+    return basenum + argument;
+  };
+}
+ const plusTwo = makePlusFunction(2)
+const plusFive = makePlusFunction(5)
+const plusSeven = makePlusFunction(plusTwo(plusFive(0)))
+const plusTen = makePlusFunction(10)
+
+console.log(plusFive(2));
+
 
